@@ -55,12 +55,21 @@ const Login = () => {
             required
           />
           <div className="flex justify-center items-center">
-          <button type="submit" className="btn-blue w-1/2 text-white font-semibold rounded-xl bg-purple py-2">Login</button>
+          <button type="submit" className="cursor-pointer btn-blue w-1/2 text-white font-semibold rounded-xl bg-purple py-2">Login</button>
+          <button
+          onClick={()=>{
+            setFormData({
+              email: "johnwatson@mail.com",
+              password: "121212",
+          })
+          }}
+          className="cursor-pointer bg-blue-600 py-2 rounded-xl font-semibold w-1/2 ml-2 text-white ">Generate Guest Login</button>
           </div>
         </form>
         <p className="text-center text-dark-gray mt-4">
-          Don't have an account? <a href="/signup" className="text-purple">Sign Up</a>
+          Don't have an account? <a href="/signup" className="text-purple cursor-pointer">Sign Up</a>
         </p>
+        
       </div>
     </div>
   );
