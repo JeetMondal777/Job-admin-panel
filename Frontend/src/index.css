@@ -1,0 +1,65 @@
+@import "tailwindcss";
+@tailwind components;
+@tailwind utilities;
+
+/* index.css or styles.css */
+
+/* Define CSS Variables */
+:root {
+  --purple: #6B46C1;
+  --soft-gray: #A0AEC0;
+  --dark-gray: #333333;
+  --light-gray: #F5F7FA;
+  --black: #000000;
+}
+
+/* Utility Classes */
+.bg-purple {
+  background-color: var(--purple);
+}
+
+.text-purple {
+  color: var(--purple);
+}
+
+.bg-soft-gray {
+  background-color: var(--soft-gray);
+}
+
+.text-soft-gray {
+  color: var(--soft-gray);
+}
+
+.bg-dark-gray {
+  background-color: var(--dark-gray);
+}
+
+.text-dark-gray {
+  color: var(--dark-gray);
+}
+
+.bg-light-gray {
+  background-color: var(--light-gray);
+}
+
+.text-light-gray {
+  color: var(--light-gray);
+}
+
+.bg-black {
+  background-color: var(--black);
+}
+
+.text-black {
+  color: var(--black);
+}
+
+/* Custom scrollbar styling */
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
